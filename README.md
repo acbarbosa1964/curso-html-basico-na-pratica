@@ -116,7 +116,7 @@ O conteúdo é apresentado de forma simples e propondo diversos exercícios prá
 - Seção 13 - Scripts - Usando Javascript em programas HTML
   - Para que serve o Javascript?
   - Como inserir um script em um HTML
-  - A tag ``<noscript>
+  - A tag ``<noscript>``
   - Alterando o conteúdo de um parágrafo com Javascript;
   - Revisão
 
