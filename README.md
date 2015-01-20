@@ -19,7 +19,7 @@ O conteúdo é apresentado de forma simples e propondo diversos exercícios prá
 # Conteúdo Programático
 
 - Seção 1 - O Curso - Apresentação Inicial
- 
+
 
 - Seção 2 - Introdução - Visão geral do curso
   - O que é HTML?
