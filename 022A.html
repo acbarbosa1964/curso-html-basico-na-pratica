@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usando Classes em HTML</title>
+    <style>
+        table {
+            width: 210px;
+            height: 243px;
+            border: 1px #99ba73 groove;
+            background-color: #e5edfa;
+            padding: 18px;
+            color: #002157;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            font-style: inherit;
+            text-decoration: inherit;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            -moz-box-shadow: 0px 0px 10px 0px #333333;
+            -webkit-box-shadow: 0px 0px 10px 0px #333333;
+            box-shadow: 0px 0px 10px 0px #333333;
+        }
+        table.dia {
+            background-color: #e5edfa;
+            font-size: 14px;
+        }
+        table.aqua {
+            background-color: #e5edfa;
+            font-size: 14px;
+        }
+
+
+        h1.dia {
+            color: black;
+        }
+        h1.aqua {
+            color: black;
+        }
+        td.passeio {
+            font-family: Tahoma;
+            font-size: 11pt;
+            font-weight: 100;
+            font-style: oblique;
+            text-emphasis:
+        }
+        tr.preco {
+            font-family: tahoma;
+            font-size: 10pt;
+            font-style: italic;
+            text-align: right;
+        }
+        td {
+            width: 210px;
+            padding: 15px;
+        }
+        span.forte {
+            font-family: serif;
+            font-style: normal;
+            font-size: 18pt;
+            color: red;
+
+        }
+        a {
+            text-align: right;
+            font-family: Arial;
+            font-style: italic;
+            font-size: 11pt;
+        }
+        img {
+            border-radius: 8px;
+            width: 210px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="dia">Viagens e excursões de um dia</h1>
+        <table class="dia">
+            <tr>
+                <td class="passeio">
+                    Excursão de um dia pelo Corcovado, Cristo Redentor e Pão de Açúcar<br>
+                    <a href="http://goo.gl/qKIj27" target="_blank">Saiba mais...</a>
+                </td>
+                <td class="passeio">
+                    Evite as filas: Clube Noturno Rio Scenarium com mesa reservada<br>
+                    <a href="http://goo.gl/CRwq8o" target="_blank">Saiba mais...</a>
+                </td>
+                <td class="passeio">
+                    Viagem diurna para o lado argentino das Cataratas do Iguaçu em ...<br>
+                    <a href="http://goo.gl/yTwqMF" target="_blank">Saiba mais...</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="http://goo.gl/HjNwTv"></img></td>
+                <td><img src="http://goo.gl/imU6gp"></img></td>
+                <td><img src="http://goo.gl/A7Hq4I"></img></td>
+            </tr>
+            <tr class="preco">
+                <td>A partir de<br> <span class="forte">USD 173.99</span></td>
+                <td>A partir de<br> <span class="forte">USD 72.99</span></td>
+                <td>A partir de<br> <span class="forte">USD 48.99</span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1 class="aqua">Cruzeiros, iatismo e excursões aquáticas</h1>
+        <table class="aqua">
+            <tr>
+                <td class="passeio">
+                    Viagem de um dia e cruzeiro de escuna em Angra dos Reis<br>
+                    <a href="http://goo.gl/vnwum6" target="_blank">Saiba mais...</a>
+                </td>
+                <td class="passeio">
+                    Cruzeiro pela Baía de Guanabara com almoço opcional com frutos do mar<br>
+                    <a href="http://goo.gl/HNjDru" target="_blank">Saiba mais...</a>
+                </td>
+                <td class="passeio">
+                    Excursão de dia inteiro pelas ilhas tropicais do Rio de Janeiro ...<br>
+                    <a href="http://goo.gl/EbF7Rw" target="_blank">Saiba mais...</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="http://goo.gl/iuMV6f"></img></td>
+                <td><img src="http://goo.gl/W5oP5n"></img></td>
+                <td><img src="http://goo.gl/QDgHb9"></img></td>
+            </tr>
+            <tr class="preco">
+                <td>A partir de<br> <span class="forte">USD 99.99</span></td>
+                <td>A partir de<br> <span class="forte">USD 64.99</span></td>
+                <td>A partir de<br> <span class="forte">USD 99.99</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
