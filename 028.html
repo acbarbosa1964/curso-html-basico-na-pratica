@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website com cabeçalho, menu e corpo</title>
+    <style>
+        html,
+        body {
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #3b5e71;
+        }
+        /* -------------------------------------------------------------------------------- */
+        #wrapper {
+            padding: 10px;
+        }
+        #side {
+            width: 240px;
+            min-height: 600px;
+            background-color: #DCE3DA;
+            -webkit-box-shadow: #B3B3B3 11px 11px 11px;
+            -moz-box-shadow: #B3B3B3 11px 11px 11px;
+            box-shadow: #B3B3B3 11px 11px 11px;
+        }
+        #sideTitle {
+            font-family: Arial;
+            font-size: 18pt;
+            font-weight: 400;
+            padding-left: 6px;
+            padding-top: 15px;
+            height: 30px;
+            background-color: #acbedc;
+        }
+        #litleflag {
+            width: 22px;
+            height: 15px;
+            border-radius: 5pt;
+            padding: 2px;
+        }
+        #fazer,
+        #vertudo {
+            font-family: Arial;
+            font-size: 11pt;
+            font-weight: 100;
+            padding-left: 6px;
+            padding-top: 15px;
+            min-height: 35px;
+            vertical-align: middle;
+        }
+        #fazer {
+            border-bottom: 1px solid #6f726b;
+        }
+        #vertudo {
+            background-color: #acbedc;
+        }
+        /* -------------------------------------------------------------------------------- */
+        #pagewidth {} #header {
+            position: relative;
+            height: 100px;
+            background-color: #FFFFFF;
+            width: 100%;
+            display: block;
+            overflow: auto;
+        }
+        #leftcol {
+            width: 20%;
+            float: left;
+            position: relative;
+            background-color: #FFFFFF;
+        }
+        #maincol {
+            background-color: #FFFFFF;
+            position: relative;
+            min-height: 800px;
+            width: 80%;
+            float: right;
+        }
+        #footer {
+            height: 120px;
+            background-color: #A09C7C;
+            clear: both;
+            display: block;
+            overflow: auto;
+        }
+        #cabecalho {
+            position: relative;
+            height: 100px;
+            background-color: #FFFFFF;
+            width: 100%;
+            display: block;
+            overflow: auto;
+            padding: 10px;
+        }
+        /* -------------------------------------------------------------------------------- */
+        #menu_wrap {
+            position: relative;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            padding-right: 0px;
+            width: 100%;
+            height: 40px;
+            list-style-type: none;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
+        }
+        .button a {
+            cursor: pointer;
+            text-align: center;
+            font: 13px/100% Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: relative;
+            min-width: 50px;
+            height: 20px;
+            float: left;
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3)
+        }
+        .button:first-child a {
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-bottom-left-radius: 10px;
+            -moz-border-topleft-radius: 10px;
+            -moz-border-bottomleft-radius: 10px;
+            border-top-left-radius: 10;
+            border-bottom-left-radius: 10px
+        }
+        .Blue,
+        .Blue .button a {
+            color: #d9eef7;
+            background: #00adee;
+            border-right: solid 1px #0078a5;
+            background: -moz-linear-gradient(top, #00adee 0%, #0078a5 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00adee), color-stop(100%, #0078a5));
+            background: -webkit-linear-gradient(top, #00adee 0%, #0078a5 100%);
+            background: -o-linear-gradient(top, #00adee 0%, #0078a5 100%);
+            background: -ms-linear-gradient(top, #00adee 0%, #0078a5 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5', GradientType=0);
+            background: linear-gradient(top, #00adee 0%, #0078a5 100%);
+        }
+        .Blue .button a:hover,
+        .Blue .button a:focus {
+            background: #0095cc;
+            background: -moz-linear-gradient(top, #0095cc 0%, #00678e 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0095cc), color-stop(100%, #00678e));
+            background: -webkit-linear-gradient(top, #0095cc 0%, #00678e 100%);
+            background: -o-linear-gradient(top, #0095cc 0%, #00678e 100%);
+            background: -ms-linear-gradient(top, #0095cc 0%, #00678e 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e', GradientType=0);
+            background: linear-gradient(top, #0095cc 0%, #00678e 100%);
+        }
+        .Blue .button a:active {
+            background: #0078a5;
+            background: -moz-linear-gradient(top, #0078a5 0%, #00adee 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0078a5), color-stop(100%, #00adee));
+            background: -webkit-linear-gradient(top, #0078a5 0%, #00adee 100%);
+            background: -o-linear-gradient(top, #0078a5 0%, #00adee 100%);
+            background: -ms-linear-gradient(top, #0078a5 0%, #00adee 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee', GradientType=0);
+            background: linear-gradient(top, #0078a5 0%, #00adee 100%);
+        }
+        .button:last-child a {
+            float: left;
+            border: none;
+            -webkit-border-top-right-radius: 10px;
+            -webkit-border-bottom-right-radius: 10px;
+            -moz-border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px
+        }
+        #cabecalho {
+            position: relative;
+            height: 100px;
+            background-color: #FFFFFF;
+            width: 100%;
+            display: block;
+            overflow: auto;
+        }
+        #imgtopo {
+            padding: 8px;
+            border-radius: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="pagewidth">
+
+        <!-- Cabeçalho do site -->
+
+        <div id="cabecalho">
+            <img src="http://goo.gl/EgAIo5">
+        </div>
+
+        <!-- Corpo do Site -->
+        <div>
+            <ul id="menu_wrap" class="Blue">
+                <li class="button"><a href="#">Home</a>
+                </li>
+                <li class="button"><a href="#">Passeios</a>
+                </li>
+                <li class="button"><a href="#">Sobre</a>
+                </li>
+                <li class="button"><a href="#">Contatos</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Corpo do Site -->
+        <div id="wrapper">
+            <div id="maincol">
+                <img id="imgtopo" src="http://goo.gl/rNzm2B">
+                </br>
+                <iframe src="022A.html" name="corpo" scrolling="auto" frameborder="no" align="left" height="1050" width="100%">
+                </iframe>
+            </div>
+            <div id="leftcol">
+                <div id="side">
+                    <div id="sidetitle">
+                        <img id="litleflag" src="images/brasil.jpg">Brasil
+                    </div>
+                    <div id="fazer">
+                        <a href="http://goo.gl/xTkRDo" target="_blank">Excursões aéreas, em helicópteros e em balões</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/Wb0p3D" target="_blank">Cruzeiros, iatismo e excursões aquáticas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/NvulKf" target="_blank">Excursões culturais e temáticas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/2oNS50" target="_blank">Viagens e excursões de um dia</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/QKpVSk" target="_blank">Alimentação, vinhos e vida noturna</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/uQg7Sw" target="_blank">Excursões de vários dias e estendidas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/VbHFy0" target="_blank">Atividades em ambientes externos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/HvBOiF" target="_blank">Excursões particulares e personalizadas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/VM75vC" target="_blank">Excursões pela praia</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/HHLlcB" target="_blank">Shows, concertos e esportes</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/pHBGV1" target="_blank">Tíquetes e ingressos para passeios turísticos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/fS5ggs" target="_blank">Excursões e passeios turísticos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/d5Fgoc" target="_blank">Traslados e transporte por terra</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/hFKiqn" target="_blank">Excursões a pé e de bicicleta</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/CaaJub" target="_blank">Esportes aquáticos</a>
+                    </div>
+                    <div id="vertudo"><a href="http://goo.gl/HY8plF" target="_blank">Veja todas as coisas para fazer...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
