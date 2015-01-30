@@ -1,0 +1,78 @@
+    <div id="pagewidth">
+        
+        <!-- Cabeçalho do site -->
+
+        <div id="cabecalho">
+            <img src="http://goo.gl/EgAIo5">
+        </div>
+        
+        <!-- Corpo do Site -->
+        <div>
+            <ul id="menu_wrap" class="Blue">
+                <li class="button"><a href="#">Home</a>
+                </li>
+                <li class="button"><a href="#">Passeios</a>
+                </li>
+                <li class="button"><a href="#">Sobre</a>
+                </li>
+                <li class="button"><a href="#">Contatos</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Corpo do Site -->
+        <div id="wrapper">
+            <div id="maincol">
+                <img id="imgtopo" src="http://goo.gl/rNzm2B">
+                </br>
+                <iframe src="022A.html" name="corpo" scrolling="auto" frameborder="no" align="left" height="1050" width="100%">
+                </iframe>
+            </div>
+            <div id="leftcol">
+                <div id="side">
+                    <div id="sidetitle">
+                        <img id="litleflag" src="images/brasil.jpg">Brasil
+                    </div>
+                    <div id="fazer">
+                        <a href="http://goo.gl/xTkRDo" target="_blank">Excursões aéreas, em helicópteros e em balões</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/Wb0p3D" target="_blank">Cruzeiros, iatismo e excursões aquáticas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/NvulKf" target="_blank">Excursões culturais e temáticas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/2oNS50" target="_blank">Viagens e excursões de um dia</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/QKpVSk" target="_blank">Alimentação, vinhos e vida noturna</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/uQg7Sw" target="_blank">Excursões de vários dias e estendidas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/VbHFy0" target="_blank">Atividades em ambientes externos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/HvBOiF" target="_blank">Excursões particulares e personalizadas</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/VM75vC" target="_blank">Excursões pela praia</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/HHLlcB" target="_blank">Shows, concertos e esportes</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/pHBGV1" target="_blank">Tíquetes e ingressos para passeios turísticos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/fS5ggs" target="_blank">Excursões e passeios turísticos</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/d5Fgoc" target="_blank">Traslados e transporte por terra</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/hFKiqn" target="_blank">Excursões a pé e de bicicleta</a>
+                    </div>
+                    <div id="fazer"><a href="http://goo.gl/CaaJub" target="_blank">Esportes aquáticos</a>
+                    </div>
+                    <div id="vertudo"><a href="http://goo.gl/HY8plF" target="_blank">Veja todas as coisas para fazer...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer">
+        <h2>Footer</h2>
+    </div>
